@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test1
+        {
+            height: 200px;
+            width: 300px;
+            color: brown;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="test" class="test1">
+        hello world
+    </h2>
+    <script>
+       h2tag =  document.getElementById("test");
+    //   h2tag.innerHTML = "this is h2 tag";
+
+      console.log(h2tag);
+      console.log(h2tag.id);
+
+      h2tag.style.color ="blue"
+
+      h2tag.classList.add('test1');
+      h2tag.classList.remove('test1');
+
+      alert(h2tag.id);
+
+    </script>
+</body>
+</html>
