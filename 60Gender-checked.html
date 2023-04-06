@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    GENDER :
+    <input type="radio" name="x" id="" value="Male"><label for="">Male</label>
+    <input type="radio" name="x" id="" value="Female"><label for="">Female</label>
+    <input type="radio" name="x" id="" value="Other"><label for="">Other</label>
+
+    <br>
+    <input type="submit" onclick="test()" name="" id="">
+    <br>
+    <span id="result"></span>
+    <script>
+        inp = document.getElementsByName("x")
+        result = document.getElementById("result")
+        function test()
+        {
+            for(x=0;x<inp.length;x++)
+            {
+                if(!inp[x].checked)
+                {
+                   result.innerHTML ="Select any one....";
+                   result.style.color = "red"
+
+                }
+                else 
+                {
+                    result.innerHTML ="Gender : " + inp[x].value;
+                   result.style.color = "green"
+
+                    return false;
+
+                }
+            }
+        }
+    </script>
+</body>
+</html>

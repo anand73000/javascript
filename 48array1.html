@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="x">h1</h1>
+    <h1 id="x">h1</h1>
+    <h1 id="x">h1</h1>
+    <h1 id="x">h1</h1>
+
+    <input type="text" name="x">
+    <input type="text" name="x">
+    <input type="text" name="x">
+
+    <h2 class="x">h2</h2>
+    <h2 class="x">h2</h2>
+    <h2 class="x">h2</h2>
+    <h2 class="x">h2</h2>
+
+    <script>
+        h1tag = document.getElementsByTagName('h1')
+
+        for(x=0;x<h1tag.length;x++)
+        {
+            h1tag[x].style.color = "red"
+        }
+
+        inp = document.getElementsByName('x')
+
+        for(k=0;k<inp.length;k++)
+        {
+            inp[k].style.border = "3px solid green"
+        }
+
+        h2tag = document.getElementsByClassName('x')
+
+        for(i=0;i<h2tag.length;i++)
+        {
+            h2tag[i].style.color = "coral"
+        }
+    </script>
+  
+</body>
+</html>

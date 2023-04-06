@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Name : <input type="text" id="nm" value=""><br><br>
+    Mobile : <input type="text" id="mn" value=""><br><br>
+
+    <input type="submit" onclick="validate()">
+    <h2 id="h2"></h2>
+   <script>
+    nm = document.getElementById('nm')
+    mobile = document.getElementById('mn')
+    h2 =document.getElementById('h2');
+
+
+    nm_exp = /^[a-zA-Z]$/;
+    function validate()
+    {
+        if(nm.value== "")
+        {
+            alert("name is requried..")
+            return false;
+        }
+        
+        if(!nm_exp.test(nm.value))
+        {
+            alert("only alphabets...");
+            return false;
+        }
+        if(mobile.value== "")
+        {
+            alert("mobile is requried....")
+            return false;
+        }
+    }
+   </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+     <h1 id="h1">hello</h1>
+
+     <div id="d1" onclick="test()">div</div>
+     <p id="p1" onclick=" test1()">para</p>
+     <script>
+        h1 = document.getElementById('h1')
+        div = document.getElementById('d1')
+        para = document.getElementById('p1')
+
+        function test()
+        {
+           h1.innerHTML="this is h1"
+        }
+        function test1()
+        {
+            h1.style.color=("green");
+            para.style.color=("red");
+        }
+     </script>
+</body>
+</html>

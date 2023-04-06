@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div
+      {
+        height: 30x0px;
+        width: 50%;
+        margin: auto;
+        overflow: hidden;
+      }
+      div img 
+      {
+        animation: slide 1s ;
+      }
+      @keyframes slide
+      {
+        from{transform: scale(1);}
+        to{transform: scale(1.2);}
+      }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="img/img1.jpg" alt="" height="300px" width="100%"class="i">
+        <img src="img/img2.jpg" alt="" height="300px" width="100%"  class="i">
+        <img src="img/img3.jpg" alt="" height="300px" width="100%"  class="i">
+        <img src="img/img4.jpg" alt="" height="300px" width="100%"  class="i">
+    </div>
+     <script>
+   
+        index = 0;
+       function slider()
+       {
+       
+        image = document.getElementsByClassName("i")
+
+        // image[0].style.display="none"
+        // image[1].style.display="none"
+        // image[2].style.display="none"
+        // image[3].style.display="none"
+
+        for(x=0;x<image.length;x++)
+        {
+            image[x].style.display="none"
+        }
+
+        image[index].style.display="block"
+        index++;
+
+        if(index==4)
+        {
+            index = 0;
+        }
+          
+          setTimeout("slider()",1000);
+       }
+       slider()
+        
+
+     </script>
+</body>
+</html>

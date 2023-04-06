@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    num1 = <input type="text" id="i1" value="10">
+    num2 = <input type="text" id="i2" value="20">
+   
+    <h1 id="res"></h1>
+
+    <button onclick="addnum()">+</button>
+    <button onclick="subnum()">-</button>
+    <button onclick="mulnum()">*</button>
+    <button onclick="divinum()">/</button>
+    <button onclick="modnum()">%</button>
+    <script>
+        input1 = document.getElementById('i1')
+        input2 = document.getElementById('i2')
+        h1tag =  document.getElementById('res')
+
+        console.log(input1.value);
+        console.log(input2.value);
+
+        console.log(parseInt(input1.value) + parseInt(input2.value));
+
+        function addnum()
+        {
+            sum = (parseInt(input1.value) + parseInt(input2.value));
+            h1tag.innerHTML = sum;
+        }
+        function subnum()
+        {
+            sum = (parseInt(input1.value) - parseInt(input2.value));
+            h1tag.innerHTML = sum;
+        }
+        function mulnum()
+        {
+            sum = (parseInt(input1.value) * parseInt(input2.value));
+            h1tag.innerHTML = sum;
+        }
+        function divinum()
+        {
+            sum = (parseInt(input1.value) / parseInt(input2.value));
+            h1tag.innerHTML = sum;
+        }
+        function modnum()
+        {
+            sum = (parseInt(input1.value) % parseInt(input2.value));
+            h1tag.innerHTML = sum;
+        }
+    </script>
+</body>
+</html>

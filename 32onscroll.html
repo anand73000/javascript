@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .maindiv
+        {   
+            height: 300px;
+            display: flex;
+            position: relative;
+        }
+        .div1 
+        {
+            height: 300px;
+            width: 50%;
+            background-color: brown;
+            position: absolute;
+            top: 0;
+            right: 100%;
+            transition: 1s;
+        }
+        .div2
+        {
+            height: 300px;
+            width: 50%;
+            background-color:yellow;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body onscroll="onscroll()">
+    <div>
+
+        <h1>heading </h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt cum perferendis vel adipisci, magni, sequi modi quaerat iste dicta quisquam sit dolores ducimus. Voluptate dolore, cupiditate eveniet provident quidem odit.
+    </div>
+    <div>
+
+        <h1>heading </h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt cum perferendis vel adipisci, magni, sequi modi quaerat iste dicta quisquam sit dolores ducimus. Voluptate dolore, cupiditate eveniet provident quidem odit.
+    </div>
+    <div>
+
+        <h1>heading </h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt cum perferendis vel adipisci, magni, sequi modi quaerat iste dicta quisquam sit dolores ducimus. Voluptate dolore, cupiditate eveniet provident quidem odit.
+    </div>
+    <div>
+
+        <h1>heading </h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt cum perferendis vel adipisci, magni, sequi modi quaerat iste dicta quisquam sit dolores ducimus. Voluptate dolore, cupiditate eveniet provident quidem odit.
+    </div>
+    <div>
+
+        <h1>heading </h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt cum perferendis vel adipisci, magni, sequi modi quaerat iste dicta quisquam sit dolores ducimus. Voluptate dolore, cupiditate eveniet provident quidem odit.
+    </div>
+
+    <div class="maindiv" id="maindiv">
+        <div class="div1" id="d1"></div>
+    <div class="div2" id="d2"></div>
+    </div>
+    <div>
+
+        <h1>heading </h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt cum perferendis vel adipisci, magni, sequi modi quaerat iste dicta quisquam sit dolores ducimus. Voluptate dolore, cupiditate eveniet provident quidem odit.
+    </div>
+    <div>
+
+        <h1>heading </h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt cum perferendis vel adipisci, magni, sequi modi quaerat iste dicta quisquam sit dolores ducimus. Voluptate dolore, cupiditate eveniet provident quidem odit.
+    </div>
+    <div>
+
+        <h1>heading </h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt cum perferendis vel adipisci, magni, sequi modi quaerat iste dicta quisquam sit dolores ducimus. Voluptate dolore, cupiditate eveniet provident quidem odit.
+    </div>
+    <div>
+
+        <h1>heading </h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt cum perferendis vel adipisci, magni, sequi modi quaerat iste dicta quisquam sit dolores ducimus. Voluptate dolore, cupiditate eveniet provident quidem odit.
+    </div>
+    <div>
+
+        <h1>heading </h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt cum perferendis vel adipisci, magni, sequi modi quaerat iste dicta quisquam sit dolores ducimus. Voluptate dolore, cupiditate eveniet provident quidem odit.
+    </div>
+    <div>
+
+        <h1>heading </h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt cum perferendis vel adipisci, magni, sequi modi quaerat iste dicta quisquam sit dolores ducimus. Voluptate dolore, cupiditate eveniet provident quidem odit.
+    </div>
+    <div>
+
+        <h1>heading </h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt cum perferendis vel adipisci, magni, sequi modi quaerat iste dicta quisquam sit dolores ducimus. Voluptate dolore, cupiditate eveniet provident quidem odit.
+    </div>
+    <div>
+
+        <h1>heading </h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt cum perferendis vel adipisci, magni, sequi modi quaerat iste dicta quisquam sit dolores ducimus. Voluptate dolore, cupiditate eveniet provident quidem odit.
+    </div>
+
+    <script>
+        maindiv = document.getElementById('maindiv');
+        div1 = document.getElementById('d1')
+        div2 = document.getElementById('d2')
+
+        function onscroll()
+        {
+            if(document.documentElement.scrollTop > 400)
+            {
+               div1.style.right="50%"
+            
+               div2.style.left="50%"
+             
+               
+            }
+            else 
+            {
+                div1.style.right="100%"
+                div2.style.left="100%"
+              
+            }
+        }
+    </script>
+</body>
+</html>

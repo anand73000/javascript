@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .test 
+       {
+        height: 200px;
+        width: 200px;
+        color: green;
+       }
+    </style>
+</head>
+<body>
+    
+    <p id="p1" class="test">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorum sunt ipsum aut error expedita praesentium ad totam adipisci reiciendis optio recusandae, est voluptas officiis aliquam aliquid quod rem laborum?
+    </p>
+     <button onclick="addcss()">add</button>
+     <button onclick="removecss()">remove</button>
+     <button onclick="addremovecss()">add/remove</button>
+    <script>
+         ptag = document.getElementById('p1');
+
+        //  ptag.classList.add=('test')
+
+        function addcss()
+        {
+            ptag.classList.add('test');
+        }
+        function removecss()
+        {
+            ptag.classList.remove('test');
+        }
+        function addremovecss()
+        {
+            ptag.classList.toggle('test');
+        }
+    </script>
+</body>
+</html>

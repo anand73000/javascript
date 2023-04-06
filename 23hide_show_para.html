@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis suscipit repudiandae modi deserunt qui in fugiat sapiente, necessitatibus hic facilis voluptates reiciendis possimus minus ullam, harum dolore nihil! Sit, ex.
+    </p>
+    <button onclick="adddisplay()">add</button>
+    <button onclick="removedisplay()">remove</button>
+    <button onclick="addremove()">add/remove</button>
+
+    <script>
+        ptag = document.getElementById('p1');
+
+        function adddisplay()
+        {
+            ptag.style.display =("block");
+        }
+        function removedisplay()
+        {
+            ptag.style.display =("none");
+        }
+        function addremove()
+        {
+            if( ptag.style.display ==("none"))
+            {
+                ptag.style.display =("block");
+            }
+            else 
+            {
+                ptag.style.display =("none");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // varname = {"index1":val1,"index2":val2}
+
+        obj = {"name":"anand","age":"20","course":"wd"}
+
+        // document.write(typeof[obj]);
+        // document.write("<br>");
+        // document.write(obj["age"]);
+        // document.write("<br>");
+        // document.write(obj.course);
+
+        for(index in obj)
+        {
+            document.write(index);
+            document.write("<br>");   
+        }
+
+        for(index in obj)
+        {
+            
+            document.write("<br>");
+            document.write(obj[index]);
+        }
+
+
+    </script>
+</body>
+</html>

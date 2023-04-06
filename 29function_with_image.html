@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="" height="100px" width="100px" id="i1" alt="">
+
+    <img src="https://th.bing.com/th/id/OIP.1YM53mG10H_U25iPjop83QHaEo?pid=ImgDet&rs=1" height="100px" width="100px" id="i2" alt="">
+
+    <button onclick="getimage()">getimage</button>
+    <button onclick="changeimg()">changeimage</button>
+
+    <script>
+        i1 = document.getElementById('i1')
+       i2 = document.getElementById('i2')
+
+       function getimage()
+       {
+        i1.src = "https://th.bing.com/th/id/OIP.1YM53mG10H_U25iPjop83QHaEo?pid=ImgDet&rs=1";
+       }
+       function changeimg()
+       {
+        i2.src="https://i.pinimg.com/originals/a4/7b/c5/a47bc5cd070241ea7ffa5ff6dae5b71e.jpg"
+       }
+    </script>
+</body>
+</html>
