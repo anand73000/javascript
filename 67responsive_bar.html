@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{box-sizing: border-box;margin: 0;padding: 0;}
+        .test 
+        {
+           background-color: lightgray;
+           padding: 20px;
+           text-align: center;
+        }
+        li
+        {
+            display: inline;
+            margin-right: 20px;
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+        }
+        .test i
+        {
+            display: none; 
+            font-size: 30px;
+        }
+        .active 
+        {
+            display: block;
+        }
+      
+        @media (max-width:500px)
+        {
+           ul{display: none;}
+           .test i{display: block;margin-left: 300px;}
+           li{display: block;padding: 5px;background-color:burlywood;border: none;margin-top: 5px;color: black;margin-right: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="test">
+        <i id="i" class="fa-solid fa-bars" ></i>
+      <ul id="ul">
+        <li id="li">Home</li>
+        <li id="li">About</li>
+        <li id="li" >Contact US</li>
+      </ul>
+      
+    </div>
+
+    <script>
+      icon = document.querySelector("#i")
+      ul = document.querySelector("#ul")
+      litag = document.getElementsByTagName('li')
+
+      icon.addEventListener("click",test1)
+      function test1()
+      {
+          //ul.style.display="block"
+        ul.classList.toggle('active')
+      }
+
+  
+    </script>
+</body>
+</html>

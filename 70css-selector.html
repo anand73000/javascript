@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p
+        {
+            color: red;
+        }
+
+        div p 
+        {
+            color: green;
+        }
+        div > p 
+        {
+            color: blue;
+        }
+        div + p 
+        {
+            color: purple;
+        }
+        div ~ p 
+        {
+            color: rgb(255, 0, 132);
+        }
+        div.test 
+        {
+            background: blueviolet;
+        }
+
+        .t1.t
+        {
+            background-color: aqua;
+        }
+        .t2.t
+        {
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="test">div</div>
+    <p class="test">para</p>
+
+    <div class="t t1">t1</div>
+    <div class="t t2">t2</div>
+    <div>
+        <p>para1</p>
+        <p>para2</p>
+        <p>para3</p>
+        <p>para4</p>
+
+        <h1>
+            <p>para5</p>
+            <p>para6</p>
+            <p>para7</p>
+            <p>para8</p>
+        </h1>
+    </div>
+
+    <p>para9</p>
+    <p>para10</p>
+
+</body>
+</html>

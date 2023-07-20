@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="para">
+        <p>hello</p>
+        <p>hello12</p>
+        <p id="p">hello1234</p>
+
+    </div>
+    <script>
+        div = document.querySelector(".para")
+        p = document.querySelector("#p")
+
+        h1 = document.createElement("h1")
+        txt = document.createTextNode("hello this is h1")
+
+        h1.append(txt);
+        // div.append(h1)
+        div.insertBefore(h1,p)
+    </script>
+</body>
+</html>

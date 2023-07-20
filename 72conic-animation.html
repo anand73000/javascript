@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body 
+        {
+            background-color: black;
+        }
+        .box
+        {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background:transparent;
+            /* border: 1px solid lightcoral; */
+
+            float: left;
+            margin: 20px;
+        }
+       
+        #b6 
+        {
+            background: repeating-conic-gradient(red 0deg,red 20deg,yellow 20deg,yellow 30deg);
+
+            /* animation: test 1s forwards; */
+            /* animation: test 1s reverse; */
+             /* animation: test 1s linear infinite alternate; */
+             animation: test 1s linear infinite alternate-reverse;
+
+ 
+
+        }
+       
+        @keyframes test 
+        {
+            from{transform: translateX(0) rotate(0deg);}
+            to{transform: translateX(300px) rotate(360deg)}
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box" id="b6"></div>
+    
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body 
+        {
+            background-color: black;
+        }
+        .box
+        {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background:transparent;
+            border: 1px solid lightcoral;
+
+            float: left;
+            margin: 20px;
+        }
+        #b1 
+        {
+            background:conic-gradient(red,blue,yellow);
+        }
+        #b2 
+        {
+            background:conic-gradient(from 45deg ,red,blue,yellow,purple);
+        }
+        #b3
+        {
+            background:conic-gradient( red 0deg,red 90deg,blue,yellow);
+        }
+        #b4
+        {
+            background:conic-gradient(from -45deg, red 0deg,red 90deg,blue 90deg,blue 180deg,yellow 180deg,yellow 270deg,green 270deg,green 360deg);
+        }
+        #b5
+        {
+            background:conic-gradient( red 0deg,red 90deg,blue,yellow,red);
+        }
+        #b6 
+        {
+            background: repeating-conic-gradient(red 0deg,red 20deg,yellow 20deg,yellow 30deg);
+        }
+        #b7
+        {
+            background: repeating-conic-gradient(red 0deg,red 20deg,yellow 20deg,yellow 30deg);
+            background-size: 10px 10px;
+        }
+        #b8 
+        {
+            background-image: repeating-conic-gradient(red 0deg,red 20deg,transparent 20deg, transparent 30deg);
+            background-color: gray;
+        }
+        #b9
+        {
+            border-radius: 0%;
+            background: conic-gradient(red 0deg,red 40deg,transparent 90deg,transparent 180deg,yellow 180deg ,yellow 230deg,transparent 270deg , transparent 360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="b1"></div>
+    <div class="box" id="b2"></div>
+    <div class="box" id="b3"></div>
+    <div class="box" id="b4"></div>
+    <div class="box" id="b5"></div>
+    <div class="box" id="b6"></div>
+    <div class="box" id="b7"></div>
+    <div class="box" id="b8"></div>
+    <div class="box" id="b9"></div>
+</body>
+</html>

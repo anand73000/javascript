@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="x">
+        <p>hello</p>
+        <p>hello12</p>
+        <p>hello123</p>
+
+        <!-- <h1>jgdjhg</h1> -->
+    </div>
+
+    <script>
+        div = document.querySelector(".x")
+
+        h1 = document.createElement('h1');
+        txt = document.createTextNode("hello this h1 tag")
+
+        h1.append(txt);
+
+        div.append(h1)
+        console.log(div.appendChild(h1))
+    </script>
+</body>
+</html>

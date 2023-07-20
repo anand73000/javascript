@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">
+        Lorem ipsum dolor, sit amet consectetur
+         adipisicing elit. Harum reiciendis cum cupiditate quos voluptates
+         impedit tempore ipsa qui in? Ad eligendi aut 
+         voluptatum aliquam. Consequatur possimus maiores aliquam ad eaque!
+    </p>
+
+    <button id="bt1">Hide</button>
+    <button id="bt2">Show</button>
+
+    <script>
+ 
+      p = document.querySelector("#para")
+      bt1 = document.querySelector("#bt1")
+      bt2 = document.querySelector("#bt2")
+
+
+      bt1.addEventListener("click",test);
+
+      function test()
+      {
+        p.style.display="none"
+      }
+
+      bt2.addEventListener("click",test1)
+      function test1()
+      {
+        p.style.display="block"
+        p.style.color = "red"
+      }
+    </script>
+
+</body>
+</html>
